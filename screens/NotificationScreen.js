@@ -75,14 +75,12 @@ export default class NotificationScreen extends Component{
               </View>
             )
             :(
-              //<FlatList
-               // keyExtractor={this.keyExtractor}
-                //data={this.state.allNotifications}
-                //renderItem={this.renderItem}
-             // />
-             <SwipeableFlatlist allNotifications= {this.state.allNotifications}/>
+              <FlatList
+                keyExtractor={this.keyExtractor}
+                data={this.state.allNotifications}
+                renderItem={this.renderItem}
+              />
             )
-
           }
         </View>
       </View>
